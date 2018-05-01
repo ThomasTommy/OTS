@@ -1,0 +1,355 @@
+    1 23ATM04  BL_F2             Air Intake
+	s1       1             System No.
+    2 23ATM05  BL_P6             Vent with Rev. Air Flow
+	s1       1             Atmos. Sys.
+    3 23ATMIN01 BL_F3             Air Intake
+       *TYPE     0             0:T constant, 1:RV constant
+       *NXVAR    0             Number of Composition Change Params(<=5)
+	x        (31)          Feed Composition[mol/mol]
+	         0        0.21     0        0.79     0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	T        30            Temperature[C]
+	P        110           Pressure[kPa]
+	phase    0             Phase(0:Stream Definition, 1:L, 2:V)
+	s1       1             System No.
+  213 23VOL01  PIPE_VOL          Pipe with Volume
+	Vol      5             Volume[m3]
+	P        101.325       Pressure[kPa]
+	T        30            Temperature[C]
+	x        (31)          Composition[mol/mol]
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	Gw       0             Vessel Weight[kg]
+	Cpw      0.46          Vessel Specific Heat[kJ/kgK]
+	Aatm     0             Heat Trans. Area of Heat Loss[m2]
+	Uatm     6             Heat Trans. Coef. of Heat Loss[W/m2K]
+	EQfunc   0             Phase Eq. Func.(0:Unit,1:PhyQcalc..)
+	uparm    (10)          Calculation Parameter
+	         0.05     0.01     0        1        0        0        0        0        0        0       
+	PSt      101.325       Pressure Start Value[kPa]
+	s1       1             System No.
+  255 C2001    PACKDRB11         Reboiler Type(1-feed/1-cut)
+       *NS       12            Num. of Stages
+       *NSTOP    0             Num. of Top Section Stages
+       *NSBTM    0             Num. of Bottom Section Stages
+       *SRGBAF   0             Surge Baffle(1:Existing)
+       *TYPE     0             Type of Balance Calculation
+       *CUTTYPE  0             Side-Cut Type(0:Simple, 1:Chimney Tray)
+       *LLE      0             LLE Calculation(1:Yes)
+       *COND     0             Condenser(1:Existing)
+       *NCSMAX   5             Max. Num. of Components for Spec.
+	NFED     (1)           Side-Feed Stage Number(s).
+	         1       
+	NCUT     (1)           Side-Cut Stage Number(s).
+	         11      
+	vy       (12,31)       Vapor Phase Molar Composition[mol/mol]
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        1        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	zlj      (12,31)       Liquid Phase Component Holdup[kmol]
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	Temp     (12)          Temperature[C]
+	         30       30       30       30       30       30       30       30       30       30      
+	         30       30      
+	Pres1    101.325       Tower Top Pres.[kPa]
+	Pmin     10            Minimum Top Pressure[kPa]
+	Gw       9999          Tower Effective Weight[kg]
+	Cpw      0.46          Specific Heat of Structure[kJ/kgK]
+	fldes    10            Design Liquid Vol. Flow Rate[m3/m2/h]
+	hsdes    0.025         Design Static Liquid Holdup[m3/m3]
+	hodes    0.05          Design Dynamic Liquid Holdup[m3/m3]
+	aLeva    1e-006        Alpha in Leva Equation[Pah2/kg]
+	bLeva    0.005         Beta in Leva Equation[mh/kg]
+	HETP     0.7           HETP[m]
+	eps      0.95          Void Fraction of Packing[m3/m3]
+	AD       0.785         Tray Area[m2]
+	calcVtot 1             Vapor Volume Type(0:Const 1:Calc)
+	Hbtm     12            Bottom Height[m]
+	Uatm     6             Heat Trans. Coef. of Heat Loss[W/m2K]
+	Aatm     0             Heat Trans. Area of Heat Loss[m2]
+	Levminb  0             Bottom Minimum Liquid Level[m]
+	Lmax     0             Max. Liq. Flow Rate(0:no limit)[kmol/h]
+	rshell   0             Ratio of Outer Wall to Structure[-]
+	tauw     180           Time Constant for Heat Transfer[s]
+	Eftype   0             Eff. Model(0,1:Evaporation 2-4:Murphree)
+	Eft      1             Common Efficiency for all Components
+	efc      (31)          Component Efficiencies
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	efs      (12)          Stage Efficiencies
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1       
+	efcs     (12,31)       Stage per Stage Component Efficiencies
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1        1        1        1        1        1        1        1        1        1       
+	         1       
+	OConnell (2)           Coefficients of O'Connell Correlation
+	         0.492    -0.245  
+	hBlow    0             Height of Bottom Vapor Feed Nozzle[m]
+	kEbtm    0             1:Equilibrium at Pres. of Feed Nozzle
+	Rdis     0.01          Vol. Ratio Lim. Phase Disappearance[-]
+	Vsc      (1)           Side-Cut Liquid Reservoir Volume[m3]
+	         3       
+	s1       1             System No.
+	uparm    (20)          Calculation Parameter
+	         0.005    0.1      10       0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	sparm    (10)          Parameters for Calculation(Steady State)
+	         0        0        0        0        0        0        0        0        0        0       
+	PtopSt   101.325       Top Pressure Start Value[kPa]
+	PbtmSt   101.325       Bottom Pressure Start Value[kPa]
+	TempSt   (12)          Stage Temperature Start Value[C]
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0       
+	LSt      (12)          Liquid Flow Start Value[kmol/h]
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0       
+	ytSt     (31)          Top Composition Start Value[mol/mol]
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	xbSt     (31)          Bottom Composition Start Value[mol/mol]
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	x1St     (31)          Side-Cut No.1 Liq. Comp. Start Value
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0        0        0        0        0        0        0        0        0        0       
+	         0       
+	LevbSt   1             Bottom Liquid Level Start Value[m]
+	nfheater 0             Feed Heater Nozzle Number
+	dPtot    30            Pressure Difference of the Tower[kPa]
+	Tctrl    100           Stage Temperature Spec. Value[C]
+	jTctrl   12            Stage Number for Temperature Spec.
+	Xctrl    0.1           Stage Composition Spec. Value[mol/mol]
+	jXctrl   12            Stage Number for Composition Spec.
+	icXctrl  (5)           Component Number for Composition Spec.
+	         0        0        0        0        0       
+	Lctrl    100           Liquid Flow Spec. Value[kmol/h]
+	jLctrl   1             Stage No. for Liquid Flow Spec.
+	Ttop     100           Top Temperature Spec.[C]
+	Xtop     0.1           Top Composition Spec. Value[mol/mol]
+	icXtop   (5)           Component Number for Top Spec.
+	         0        0        0        0        0       
+	dXtop    0             Wet or Dry Top Composition Spec.(1:dry)
+	Xbtm     0.1           Bottom Composition Spec. Value[mol/mol]
+	icXbtm   (5)           Component Number for Bottom Spec.
+	         0        0        0        0        0       
+	dXbtm    0             Wet or Dry Bottom Spec.(1:dry)
+	Xprod1   0.1           Side-Cut No.1 Comp. Spec. Value[mol/mol]
+	icXprod1 (5)           Component Number for Side-Cut No.1 Spec.
+	         0        0        0        0        0       
+	dXprod1  0             Wet or Dry Side-Cut No.1 Spec.(1:dry)
+	method   0             Calc. Method(0:General,1:Non-ideal)
+	loopt    30            Max. Iteration for Outer Loop
+	loopm    30            Max. Iteration for Inner Loop
+	print    0             Print Level(for Check)
+ 1834 U23CALMA2211 _GCALC_P          Calc. Unit(for Process)
+       *ITYPE    0             Module Type(0:Compact, 1:Fast)
+       *NLINE    50            Max. Row Num. of Calc. Eq.
+       *NCONS    5             Num. of Const. Variable(<=30)
+       *NVAR     5             Num. of Calc. Variable(<=20)
+	etype    0             Execution Type(0:Cyclic, 1:By Request)
+	EQN      (50)          Calculation Statements(in Process)
+	         //MA2211 seperate ratio
+	         //C01 = 0.599/(0.599+0.386);
+	         //C02 = 0.1625/(0.1625+0.0813);
+	         //C03 = 0.8892/(0.8892+0.4214);
+	         //C04 = 0.206/(0.206+0.107);
+	         C01 = 0.386/(0.599+0.386);
+	         C02 = 0.0813/(0.1625+0.0813);
+	         C03 = 0.4214/(0.8892+0.4214);
+	         C04 = 0.107/(0.206+0.107);
+	         MA2211.rsep2(8)=C01;
+	         MA2211.rsep2(12)=C02;
+	         MA2211.rsep2(13)=C03;
+	         MA2211.rsep2(22)=C04;
+	         MA2211.rsep2(23)=0;
+	         MA2211.rsep2(24)=0;
+	         
+	         //For replacement with propylene of MA2211 & equalizing line(FD2320402)
+	         '23BLDUM15'.P = D2201.Pres;
+	         if(D2201.Level < 0.01) '23DUM19'.mv = VR2202.pos;
+	         else if(FD2320402.pos>0.1) '23DUM19'.mv = FD2320402.pos;
+	         else '23DUM19'.mv = 0;
+	         
+	         //For MA2211 depressurize
+	         if(D2201.Level < 0.01 && HV2210.Fw > 0.1) '23DUM21'.mv = HV2210.mv;
+	         else '23DUM21'.mv = 0;
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	         none
+	C01      0             Parameter for Constant Value-1
+	C02      0             Parameter for Constant Value-2
+	C03      0             Parameter for Constant Value-3
+	C04      0             Parameter for Constant Value-4
+	C05      0             Parameter for Constant Value-5
+	kcalc    1             Steady State Calc. Flag(1:Calc/0:No)
