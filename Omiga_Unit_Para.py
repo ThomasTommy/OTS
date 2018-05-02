@@ -1,6 +1,5 @@
 # 2018.05.01
 # By ThomasTommy.
-# Version 1.0
 # Omiga_Unit_Para_1.0.py
 
 # 实现从OnigaLand导出的设备文件中获得指定的设备参数.
@@ -15,10 +14,15 @@ import numpy as np
 # 此处的Test_DB.txt为例子.
 File = 'Test_DB.txt'
 
+
 # 打开文件.
 with open(File) as f:
     # Line_Num: 记录所在行.
     Line_Num = 0
+
+    # 生成类的新文件New_File
+    with open(New_File,'w') as New_f:
+
     # 逐行读取.
     for s in f:
         line_num += 1
@@ -40,6 +44,9 @@ with open(File) as f:
             Name = s_list[5]
             Model = s_list[7]
             Notes = s_list[8]
+
+            New_s = 'class Block_' + Name + ':\n\t'
+            New_f.write(New_s)
 
         # 如果result为空,则为Unit参数行.
         # 根据参数行前面不同的符号,分为三种情况.
